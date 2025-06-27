@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exousia Academy Login Page</title>
+  <link rel="stylesheet" href="css/login.css">
+  <style>
+    /* ... (your CSS styles here) ... */
+  </style>
+</head>
+<body>
+    
+    
+  <div class="login-container">
+    
+    <form id="login-form">
+        <img src="images/Exousia badge.png" alt="">
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button class="login-button" type="submit">Login</button>
+    </form>
+    <p id="login-message"></p>
+  </div>
+  
+
+  
+   
+
+  <footer>
+    
+  </footer>
+  <script>
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    const loginForm = document.getElementById('login-form');
+
+    loginForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Replace with your actual username and password
+        const validUsername = 'chuks';
+        const validPassword = 'Alu@123456';
+
+        if (username === validUsername && password === validPassword) {
+            // Redirect to dashboard page after successful login
+            window.location.href = 'login-dashboard.html';
+        } else {
+            alert('Invalid username or password. Please try again.');
+        }
+    });
+});
+
+ 
+  </script>
+</body>
+</html>
+
+
+
+
+

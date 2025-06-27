@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExousiaEA</title>
+  <link rel="stylesheet" href="css/admindash.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Classes</a></li>
+        <li><a href="#">Subjects</a></li>
+        <li><a href="#">Teachers</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Scores</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <p>Welcome to Exousia Entrepreneurial Academy.</p>
+    </section>
+    <section id="classes">
+      <h2>Classes</h2>
+      <ul>
+        <?php
+        // Connect to database
+        $conn = mysqli_connect("localhost", "username", "password", "school_management");
+
+        // Check connection
+        if (!$conn) {
+          die("Connection failed: " . mysqli_connect_error());
+        }
+
+        // Query classes
+        $sql = "SELECT * FROM classes";
+        $result = mysqli_query($conn, $sql);
+
+        // Display classes
+        while($row = mysqli_fetch_assoc($result)) {
+          echo "<li><a href='#'>" . $row['class_name'] . "</a></li>";
+        }
+
+        // Close connection
+        mysqli_close($conn);
+      ?>
+    </ul>
+  </section>
+  <section id="subjects">
+    <h2>Subjects</h2>
+    <ul>
+        <?php
+        // Connect to database
+        $conn = mysqli_connect("localhost", "username", "password", "school_management");
+
+        // Check connection
+        if (!$conn) {
+          die("Connection failed: " . mysqli_connect_error());
+        }
+
+        // Query subjects
+        $sql = "SELECT * FROM subjects";
+        $result = mysqli_query($conn, $sql);
+
+        // Display subjects
+        while($row = mysqli_fetch_assoc($result)) {
+          echo "<li><a href='#'>" . $row['subject_name'] . "</a></li>";
+        }
+
+        // Close connection
+        mysqli_close($conn);
+      ?>
+    </ul>
+  </section>
+  <section id="teachers">
+    <h2>Teachers</h2>
+    <ul>
+      <?php
+        // Connect to database
+        $conn = mysqli_connect("localhost", "username", "password", "school_management");
+
+        // Check connection
+        if (!$conn) {
+          die("Connection failed: " . mysqli_connect_error());
+        }
+
+        // Query teachers
+        $sql = "SELECT * FROM teachers";
+        $result = mysqli_query($conn, $sql);
+
+        // Display teachers
+        while($row = mysqli_fetch_assoc($result)) {
+          echo "<li><a href='#'>" . $row['teacher_name'] . "</a></li>";
+        }
+
+        // Close connection
+        mysqli_close($conn);
+      ?>
+    </ul>
+    </section>
+    </main>
+    </body>
+    </html>

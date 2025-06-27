@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/logindashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#cbt">CBT Exam</a></li>
+                <li><a href="#class">Class</a></li>
+                <li><a href="#assignment">Assignment</a></li>
+                <li><a href="#grade">Grade</a></li>
+                <li><a href="#result">Check Termly Result</a></li>
+                <li><a href="#message">Message Admin</a></li>
+                <li><a href="#chat">Chat Room</a></li>
+                <li><a href="#game">Game Room</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="#collaboration">Collaboration Desk</a></li>
+                <li><a href="#help">Help Desk</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <!-- Content of the selected navigation item will be displayed here -->
+        </main>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+        const mainContent = document.getElementById('main-content');
+    
+        // Function to load content from external files
+        function loadContent(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(content => {
+                    mainContent.innerHTML = content;
+                })
+                .catch(error => {
+                    console.error('Error loading content:', error);
+                });
+        }
+    
+        // Add click event listeners to sidebar links
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetUrl = this.getAttribute('href');
+                loadContent(targetUrl);
+            });
+        });
+    
+        // Load default content on page load (you can change this)
+        loadContent('default_content.html');
+    });
+</script>
+    
+    
+    
+    
+    
+</body>
+</html>

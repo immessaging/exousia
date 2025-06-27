@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    background: rgb(139, 117, 18);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(20, 2, 61, 0.1);
+    box-shadow: 10px 4px 8px rgb(42, 38, 77);
+    box-shadow: 3 7px 14px rgb(72, 38, 77);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #06203b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    align-content: space-between;
+}
+
+button:hover {
+    background-color: #075a3e;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+#parent-name {
+    width: 85%;
+}
+#prev-class {
+    width: 95%;
+}
+
+.next-btn {
+    width: 30%;
+    margin-right: 23px;
+}
+.prev-btn {
+    width: 30%;
+    margin-right: 5px;
+    margin-left: -0px;
+}
+.submit-btn {
+    width: 30%;
+    margin-right: 33px;
+}
+label{
+    color: #f4f4f4;
+}

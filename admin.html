@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <style>
+    /* ... (your CSS styles here) ... */
+  </style>
+</head>
+<body>
+    
+  <div class="login-container">
+    <h2>Admin Login</h2>
+    <form id="login-form">
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button class="login-button" type="submit">Login</button>
+    </form>
+    <p id="login-message"></p>
+  </div>
+
+  <script>
+    const form = document.getElementById('login-form');
+    const loginMessage = document.getElementById('login-message');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const username = form.username.value;
+      const password = form.password.value;
+
+      // Simulated admin credentials
+      const adminUsername = 'admin';
+      const adminPassword = 'admin123';
+
+      if (username === adminUsername && password === adminPassword) {
+        
+          // Redirect to another page after successful submission
+          window.location.href = 'admindashboard.html'; // Replace with your actual thank you page
+      
+        loginMessage.textContent = 'Admin login successful!';
+        loginMessage.style.color = 'green';
+      } else {
+        loginMessage.textContent = 'Admin login failed. Please check your credentials.';
+        loginMessage.style.color = 'red';
+      }
+    });
+  </script>
+   <footer>
+    
+  </footer>
+</body>
+</html>
+
+
+
+
+

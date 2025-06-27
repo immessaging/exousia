@@ -1,0 +1,164 @@
+/*(body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Ash */ /*
+}
+
+#header {
+    background-color: #032B44; /* Navy Blue */
+   /* color: #ffd700; /* Gold */ /*
+    padding: 20px;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#admission {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White */ 
+   /* border: 1px solid #ddd; /* Light Gray */
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light Shadow */ /*
+}
+#parent, #studentd {
+    background-color: #032B44; /* Navy Blue */
+    /*color: #ffffff; /* White */
+   /* padding: 10px;
+    border-radius: 5px 5px 0 0; /* Top-rounded corners */ /*
+}
+
+#parent label, #studentd label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#parent input, #studentd input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light Gray */ /*
+}
+
+#footer {
+    background-color: #032B44; /* Navy Blue */
+   /* color: #ffffff; /* White */
+   /* padding: 10px;
+    text-align: center;
+    clear: both;
+}
+#footer p {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #032B44; /* Navy Blue */
+    /*border-radius: 5px; /* Rounded corners */
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); Light Shadow 
+    font-size: 16px;
+    color: #333;  Dark Gray 
+}
+
+input[type="text"]:focus {
+    border-color: #ffd700; /* Gold */
+   /* box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);  Gold Shadow 
+}
+input[type="radio"] {
+    margin: 0 10px 0 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+label {
+    margin-right: 20px;
+}
+*/
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Ash */
+}
+
+#adForm {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White */
+  border: 1px solid #ddd; /* Light Gray */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light Shadow */
+}
+
+#adForm .heading {
+  background-color: #032B44; /* Navy Blue */
+  color: #ffffff; /* White */
+  padding: 10px;
+  border-radius: 5px 5px 0 0; /* Top-rounded corners */
+  text-align: center;
+}
+
+#adForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#adForm input[type="text"], #adForm select {
+  width: 85%;
+  height: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light Gray */
+  border-radius: 7px; /* Rounded corners */
+}
+
+#adForm input[type="radio"] {
+  margin: 5px 10px 0 0;
+}
+
+#adForm input[type="file"] {
+  width: 70%;
+  height: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light Gray */
+  border-radius: 5px; /* Rounded corners */
+}
+
+#adForm button {
+  background-color: #ffd700; /* Gold */
+  color: #000000; /* Black */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  align-content: space-between;
+  
+  cursor: pointer;
+}
+
+#adForm button:hover {
+  background-color: #032B44; /* Navy Blue */
+  color: #ffffff; /* White */
+}
+
+#footer {
+  background-color: #032B44; /* Navy Blue */
+  color: #ffffff; /* White */
+  padding: 10px;
+  text-align: center;
+  clear: both;
+  width: 100%;
+}
+
+
+
+

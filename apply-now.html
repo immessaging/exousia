@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.now.css">
+    <title>Apply_Now</title>
+</head>
+<body>
+    <form action="" id="adForm" >
+        <section id="one">  <h1 class="heading"> Parent's  Detail</h1>     <br> 
+        <label for="name" id="parent-name"> </label>  
+        <input type="text" id="parentn" placeholder="Parent Name"> <br>
+        <label for="country">Country:</label>
+         <select id="country-select" name="country">
+           <option value="">Select Country</option> 
+          <option value="Nigeria">Nigeria</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="Israel">Israel</option>
+          <option value="Japan">Japan</option>
+          <option value="Germany"> Germany</option>
+          <option value="Ghana"> Ghana</option>
+          <option value="South-Africa">South Africa</option>
+          <option value="Lebanon">Lebanon</option>
+          <option value="Others"></option>
+         </select>
+ <br>
+ <label for="state">State:</label>
+ <select id="state-select" name="state">
+   <option value="">Select State</option>
+ </select>
+  <br> 
+  <label for="lga">LGA:</label>
+  <select id="lga-select" name="lga">
+    <option value="">Select LGA</option>
+  </select>
+   <br> 
+            <!-- Other form fields -->
+            <BR>
+            <label for="gender">Gender:</label> 
+            <input type="radio" id="male" name="gender" value="male">
+             <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+             <label for="female">Female</label><br>
+        <label for="Residential address"></label>
+        <input type="text" id="residential" placeholder="Residential Address"> <br>
+
+        <div>
+          <select id="country-code" name="country-code">
+            <option value="+1">USA (+1)</option>
+            <option value="+44">UK (+44)</option>
+            <option value="+234">Nigeria (+234)</option>
+            <!-- Add more country codes here -->
+          </select>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      
+        <label for="occupation">Occupation:</label>
+         <select id="occupation-select" name="occupation">
+        
+<option>Accountant</option>
+<option>Actor</option>
+<option>Actuary</option>
+<option>Administrator</option>
+<option>Advertising Executive</option>
+<option>Aeronautical Engineer</option>
+<option>Agricultural Specialist</option>
+<option>Air Traffic Controller</option>
+<option>Airline Pilot</option>
+<option>Animator</option>
+<option>Archaeologist</option>
+<option>Architect</option>
+<option>Art Director</option>
+<option>Art Therapist</option>
+<option>Artist</option>
+<option>Astronomer</option>
+<option>Athletic Coach</option>
+<option>Auditor</option>
+<option>Author</option>
+<option>Automotive Technician</option>
+<option>Bank Manager</option>
+<option>Barber</option>
+<option>Bartender</option>
+<option>Biologist</option>
+<option>Botanist</option>
+<option>Business Analyst</option>
+<option>Business Manager</option>
+<option>Chemical Engineer</option>
+<option>Chemist</option>
+<option>Chiropractor</option>
+<option>Civil Engineer</option>
+<option>Claims Adjuster</option>
+<option>Clergy</option>
+<option>Clinical Psychologist</option>
+<option>Cook</option>
+<option>Counselor</option>
+<option>Court Reporter</option>
+<option>Dancer</option>
+<option>Dentist</option>
+<option>Dermatologist</option>
+<option>Designer</option>
+<option>Diagnostic Medical Sonographer</option>
+<option>Dietitian</option>
+<option>Draftsperson</option>
+<option>Economist</option>
+<option>Editor</option>
+<option>Education Administrator</option>
+<option>Electrical Engineer</option>
+<option>Elementary School Teacher</option>
+<option>Emergency Management Director</option>
+<option>Engineer</option>
+<option>English Teacher</option>
+<option>Entrepreneur</option>
+<option>Environmental Scientist</option>
+<option>Event Planner</option>
+<option>Firefighter</option>
+<option>Flight Attendant</option>
+<option>Florist</option>
+<option>Food Scientist</option>
+<option>Forensic Scientist</option>
+<option>Forester</option>
+<option>Funeral Director</option>
+<option>Game Designer</option>
+<option>Geologist</option>
+<option>Graphic Designer</option>
+<option>Hairdresser</option>
+<option>Historian</option>
+<option>Home Health Aide</option>
+<option>Hotel Manager</option>
+<option>Human Resources Manager</option>
+<option>Illustrator</option>
+<option>Industrial Engineer</option>
+<option>Information Security Analyst</option>
+<option>Information Systems Manager</option>
+<option>Insurance Underwriter</option>
+<option>Interior Designer</option>
+<option>Interpreter</option>
+<option>Investment Banker</option>
+<option>Journalist</option>
+<option>Lawyer</option>
+<option>Librarian</option>
+<option>Licensing Specialist</option>
+<option>Loan Officer</option>
+<option>Logistician</option>
+<option>Magistrate</option>
+<option>Mail Carrier</option>
+<option>Marketing Manager</option>
+<option>Mathematician</option>
+<option>Mediator</option>
+<option>Medical Assistant</option>
+<option>Medical Illustrator</option>
+<option>Medical Laboratory Technician</option>
+<option>Medical Records Technician</option>
+<option>Medical Researcher</option>
+<option>Medical Scientist</option>
+<option>Mental Health Counselor</option>
+<option>Meteorologist</option>
+<option>Microbiologist</option>
+<option>Middle School Teacher</option>
+<option>Midwife</option>
+<option>Mining Engineer</option>
+<option>Museum Curator</option>
+<option>Museum Technician</option>
+<option>Music Teacher</option>
+<option>Network Architect</option>
+<option>Network Systems Administrator</option>
+<option>Newspaper Editor</option>
+<option>Nuclear Engineer</option>
+<option>Nurse</option>
+<option>Nurse Practitioner</option>
+<option>Nutritionist</option>
+<option>Occupational Health Specialist</option>
+<option>Occupational Therapist</option>
+<option>Oceanographer</option>
+<option>Office Administrator</option>
+<option>Office Manager</option>
+<option>Operating Room Technician</option>
+<option>Optometrist</option>
+<option>Orthodontist</option>
+<option>Orthotist</option>
+<option>Osteopath</option>
+<option>Pastry Chef</option>
+<option>Personal Trainer</option>
+<option>Petroleum Engineer</option>
+<option>Pharmacist</option>
+<option>Pharmacy Technician</option>
+<option>Philosopher</option>
+<option>Photographer</option>
+<option>Physical Therapist</option>
+<option>Physician</option>
+<option>Physician Assistant</option>
+<option>Physics Teacher</option>
+<option>Police Officer</option>
+<option>Policy Analyst</option>
+<option>Preschool Teacher</option>
+<option>Principal</option>
+
+         </select>
+    
+</section>
+        <section id="two"> 
+          <h1 class="heading">
+    Prospective Student </h1>
+        
+        <label for="name" id="student-name"> </label> 
+        <input type="text" id="studentn" placeholder="Candidate Name"> <br>
+        <label for="dateb">Date of Birth</label> 
+        <input type="date" id="dateb" required> <br>
+        <label for="gender">Gender:</label> 
+        <input type="radio" id="male" name="gender" value="male"> 
+         <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female"> 
+         <label for="female">Female</label> <br>
+
+         <label for="country">Country:</label>
+         <select id="country-select" name="country">
+           <option value="">Select Country</option>         
+          <option value="Nigeria">Nigeria</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="Israel">Israel</option>
+          <option value="Japan">Japan</option>
+          <option value="Germany"> Germany</option>
+          <option value="Ghana"> Ghana</option>
+          <option value="South-Africa">South Africa</option>
+          <option value="Lebanon">Lebanon</option>
+          <option value="Others"></option>
+         </select>
+          <br>
+          <label for="state">State:</label>
+          <select id="state-select" name="state">
+            <option value="">Select State</option>
+          </select>
+           <br> 
+           <label for="lga">LGA:</label>
+           <select id="lga-select" name="lga">
+             <option value="">Select LGA</option>
+           </select>
+            <!-- Other form fields --> <br>
+        <label for="Residential address"></label>
+        <input type="text" id="residential" placeholder="Residential Address"> <br>
+        <label for="Prev"> Previous Class</label>
+        <select name="PrevClass" id="prev">
+          <option value="none">None</option>
+          <option value="Reception/Play Class"> Reception/Play Class</option>
+          <option value="Pre-School 1/ Nursery 1">Pre-School 1/ Nursery 1</option>
+          <option value="Pre-School 2/ Nursery 2">Pre-School 2/ Nursery 2</option>
+          <option value="Pre-School 3/ Nursery 3">Pre-School 3/ Nursery 3</option>
+          <option value="Basic 1/ Primary 1">Basic 1/ Primary 1</option>
+          <option value="Basic 2/ Primary 2">Basic 2/ Primary 2</option>
+          <option value="Basic 3/ Primary 3">Basic 3/ Primary 3</option>
+          <option value="Basic 4/ Primary 4">Basic 4/ Primary 4</option>
+          <option value="Basic 5/ Primary 5"></option>
+          <option value="Basic 7/JSS 1">Basic 7/JSS 1</option>
+          <option value="Basic 8/JSS 2">Basic 8/JSS 2</option>
+          <option value="Basic 9/JSS 3">Basic 9/JSS 3</option>
+          <option value="SS 1">SS 1</option>
+          <option value="SS 2"> SS 2</option>
+          <option value="SS 3"> SS 3</option>
+        </select> <br>
+         
+        <label for="current">  Class Seeking Admission</label>
+        <select name="PrevClass" id="prev">
+          <option value="none">None</option>
+          <option value="Reception/Play Class"> Reception/Play Class</option>
+          <option value="Pre-School 1/ Nursery 1">Pre-School 1/ Nursery 1</option>
+          <option value="Pre-School 2/ Nursery 2">Pre-School 2/ Nursery 2</option>
+          <option value="Pre-School 3/ Nursery 3">Pre-School 3/ Nursery 3</option>
+          <option value="Basic 1/ Primary 1">Basic 1/ Primary 1</option>
+          <option value="Basic 2/ Primary 2">Basic 2/ Primary 2</option>
+          <option value="Basic 3/ Primary 3">Basic 3/ Primary 3</option>
+          <option value="Basic 4/ Primary 4">Basic 4/ Primary 4</option>
+          <option value="Basic 5/ Primary 5"></option>
+          <option value="Basic 7/JSS 1">Basic 7/JSS 1</option>
+          <option value="Basic 8/JSS 2">Basic 8/JSS 2</option>
+          <option value="Basic 9/JSS 3">Basic 9/JSS 3</option>
+          <option value="SS 1">SS 1</option>
+          <option value="SS 2"> SS 2</option>
+          <option value="SS 3"> SS 3</option>
+        </select> <br> <br>
+      </section>
+    
+        <section id="three">  <br>
+           <h1 class="heading"> Previous School </h1>
+                
+                <label for="changeschool"> Are you changing school? </label>
+                <input type="radio" id="yes" name="Yes" value="Yes">
+         <label for="Yes">Yes</label>
+        <input type="radio" id="No" name="gender" value="No">
+         <label for="No">No</label>
+                <label for="name" id="school-name"></label> 
+        <input type="text" id="previousn" placeholder=" Previous School Name"> <br>
+        <label for="previous"></label> 
+        <input type="text" id="prev" placeholder="Reason for leaving Previous school?"> <br>
+        <label for="Gender"></label> 
+        <input type="text" id="Hm" placeholder="Principal/HM Name"> <br>
+        <label for="hm"> </label> 
+        <input type="text" id="hm" placeholder="Principal/HM phone Number"> <br>
+
+      </section>
+        <section id="four"> <h1 class="heading">Important Information </h1> <br> 
+        <label for="State"> </label> 
+        <input type="text" id="disabl" placeholder="Disability"> <br>
+        <label for="med"></label>
+        <input type="text" id="med" placeholder="Any Medical need?"> <br>
+        <label for="med"></label>
+        <input type="text" id="challenge" placeholder="Any Academic Challenge need?"> <br>
+        <label for="med"></label>
+        <input type="text" id="specare" placeholder="Any Special Care"> <br>
+      </section>
+        <section id="five"> <h1 class="heading">Files   </h1>  <br> 
+        <label for="Birthcert" id="parent-name"> </label> 
+        <input type="file" id="birthcert"  placeholder=" Birth Cert"> <br>
+        <label for="lgacert"></label> 
+        <input type="file" id="lgacert" placeholder="State/LGA of Origin Cert"> <br>
+        <label for="previous"> </label> 
+        <input type="file" id="previouscert" placeholder="School Attended Results"> <br>
+        <label for="transfer">  </label>
+        <input type="file" id="transfercert" placeholder="Transfer Cert"> <br>
+        <label for="medical"> </label>
+        <input type="file" id="medicalcert" placeholder="Medical Cert "> <br>
+      </section> 
+
+      <section class="group-three" id="six">
+        <h1 class="heading"> Agreement </h1>
+        <div class="form-control">
+            <label for="comment"> </label>
+            <textarea name="comment" id="comment" cols="5" rows="7" placeholder="Enter your comment"></textarea>
+            </div>
+               <div class="form-control">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to the terms and conditions <span style="color:red;">*</span></label>
+        </div>
+    <button id="btn" type="submit"> Confirm and Submit</button>
+    
+    </section>
+    <div class="arrows">
+        <button type="button" id="navLeft">Previous</button>
+        <span id="stepInfo"></span>
+        <button type="button" id="navRight">Next</button>
+    
+    </div>
+    </form>
+
+     <script src="apply.now.js"></script> 
+     <script src="country.state.lga.js"></script> 
+     <script src="phone.js"></script>
+     
+    <script src="in.js"> 
+
+        
+
+
+    </script>
+  </body>
+    <div id="footer">
+    <footer>
+        <p>&copy; 2023 Exousia Entrepreneurial Academy. All rights reserved.</p> 
+      </footer>
+    </div>  
+
+</html>     

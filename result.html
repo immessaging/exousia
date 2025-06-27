@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Exousia Result Checking Form</title>
+    <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+    <header>
+        <h1>Result Checking Portal</h1>
+    </header>
+
+    <section class="result-section">
+        <h2>Check Your Results</h2>
+        <form id="resultForm">
+            <label for="admissionNumber">Admission Number:</label>
+            <input type="text" id="admissionNumber" required>
+
+            <label for="Student Class">Student Class:</label>
+                <input type="text" id="classInput" name="classInput" list="classes" required>
+            <datalist id="classes">
+                <option value="Reception">
+                <option value="Clinic Class">
+                    <option value="Preschool 1">
+                        <option value="Preschool 2">
+                            <option value="Preschool 3">
+                                <option value="Basic 1">
+                                    <option value="Basic 2">
+                                        <option value="Basic 3">
+                                            <option value="Basic 4">
+                                                <option value="Basic 5">
+                                   
+              </datalist>
+
+            <label for="term">Term:</label>
+            <select id="term" required>
+                <option value="1st">1st Term</option>
+                <option value="2nd">2nd Term</option>
+                <option value="3rd">3rd Term</option>
+            </select>
+
+            <label for="academicSession">Academic Session:</label>
+            <input type="text" id="academicSession" required>
+
+            <label for="pin">PIN:</label>
+            <input type="password" id="pin" required>
+
+            <label for="serialNumber">Serial Number:</label>
+            <input type="text" id="serialNumber" required>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" required>
+
+            <button type="submit">Check Result</button>
+        </form>
+    </section>
+<div id="footer">
+    <footer>
+        <p>&copy; 2023 Exousia Entrepreneurial Academy. All rights reserved.</p>
+    </footer>
+</div>
+
+    <script >
+
+document.getElementById('resultForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    
+    var admissionNumber = document.getElementById('admissionNumber').value;
+    var studentClass = document.getElementById('studentClass').value;
+    var term = document.getElementById('term').value;
+    var academicSession = document.getElementById('academicSession').value;
+    var pin = document.getElementById('pin').value;
+    var serialNumber = document.getElementById('serialNumber').value;
+    var year = document.getElementById('year').value;
+
+    // Here you can perform the result checking process
+    // This is a placeholder, you should implement your own logic
+
+    alert('Checking result for Admission Number: ' + admissionNumber);
+});
+
+
+    </script>
+</body>
+</html>
+
+

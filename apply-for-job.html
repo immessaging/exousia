@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Vacancy Advertisement at Exousia</title>
+    <link rel="stylesheet" href="css/vacancy.css">
+</head>
+<body>
+    <header>
+        <h1>Job Vacancy at Exousia Entrepreneurial Academy</h1>
+    </header>
+
+    <section class="vacancy-section">
+        <h2>Apply for the Job</h2>
+        <form id="applicationForm" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="name">Job Applying For:</label>
+            <input type="text" id="name" required>
+            <label for="name">Job Code:</label>
+            <input type="text" id="name" required>
+            <label for="address">Residential Address:</label>
+            <input type="text" id="address" required>
+
+            <label for="state">State of Origin:</label>
+            <input type="text" id="state" required>
+
+            <label for="lga">LGA:</label>
+            <input type="text" id="lga" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="school">School Attended with Dates:</label>
+            <textarea id="school" required></textarea>
+
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" required>
+
+            <label for="experience">Job Experiences:</label>
+            <textarea id="experience" required></textarea>
+
+            <label for="computer">Computer Knowledge:</label>
+            <textarea id="computer" required></textarea>
+
+            <label for="uploadCV">Upload CV:</label>
+            <input type="file" id="uploadCV" accept=".pdf,.doc,.docx" required>
+
+            <label for="uploadBirth">Upload Birth Certificate:</label>
+            <input type="file" id="uploadBirth" accept=".pdf,.jpg,.png" required>
+
+            <label for="uploadOrigin">Upload State of Origin Certificate:</label>
+            <input type="file" id="uploadOrigin" accept=".pdf,.jpg,.png" required>
+
+            <label for="uploadAcademic">Upload Academic Certificate:</label>
+            <input type="file" id="uploadAcademic" accept=".pdf,.jpg,.png" required>
+
+            <label for="uploadNYSC">Upload NYSC Certificate:</label>
+            <input type="file" id="uploadNYSC" accept=".pdf,.jpg,.png" required>
+
+            <label for="reason">Reason for Applying:</label>
+            <textarea id="reason" required></textarea>
+
+            <label for="vision">Vision and Achievement for the School if Employed:</label>
+            <textarea id="vision" required></textarea>
+
+            <label for="how">How Did You Hear About Us?</label>
+            <input type="text" id="how" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+<div id="footer">
+    <footer>
+        <p>&copy; 2023 Exousia Entrepreneurial Academy. All rights reserved.</p>
+    </footer>
+</div>
+    <script >
+
+
+document.getElementById('applicationForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    
+    var name = document.getElementById('name').value;
+    var address = document.getElementById('address').value;
+    var state = document.getElementById('state').value;
+    var lga = document.getElementById('lga').value;
+    var dob = document.getElementById('dob').value;
+    var school = document.getElementById('school').value;
+    var qualification = document.getElementById('qualification').value;
+    var experience = document.getElementById('experience').value;
+    var computer = document.getElementById('computer').value;
+    var reason = document.getElementById('reason').value;
+    var vision = document.getElementById('vision').value;
+    var how = document.getElementById('how').value;
+    var comment = document.getElementById('comment').value;
+
+    // Here you can handle the form submission
+    // You can send the form data to a server using AJAX
+    // This is a placeholder, you should implement your own logic
+
+    console.log('Form submitted:');
+    console.log('Name:', name);
+    console.log('Residential Address:', address);
+    console.log('State of Origin:', state);
+    console.log('LGA:', lga);
+    console.log('Date of Birth:', dob);
+    console.log('School Attended:', school);
+    console.log('Qualification:', qualification);
+    console.log('Job Experiences:', experience);
+    console.log('Computer Knowledge:', computer);
+    console.log('Reason for Applying:', reason);
+    console.log('Vision and Achievement:', vision);
+    console.log('How Did You Hear About Us?', how);
+    console.log('Comment:', comment);
+});
+
+
+
+
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: goldenrod;
+    margin: 0;
+    padding: 0;
+}
+#us {
+    text-align:center;
+    color: white;
+    text-shadow: 3px 2px 7px rgb(10, 10, 10);
+    margin-bottom: 0px;
+}
+.container {
+    margin: 10px;
+    padding: 15px;
+    align-content: center;
+    text-align: justify;
+    background-color: rgb(5, 5, 109);
+    color: white;
+    text-shadow: 3px 2px 7px rgb(10, 10, 10);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    
+
+}
+#email{
+    color: black;
+}
+.head11 {
+    color: white;
+}
+.link {
+    
+    align-items:center;
+    align-content: space-between;
+    text-decoration: none;
+}
+.school-contact {
+   
+    color: black;
+    text-align:center;
+    font-size: 1.6em;
+    margin-left: 0.3em;
+    margin-bottom: 0.1em;
+    text-shadow: 3px 2px 7px black; 
+    
+    
+    
+}
+
+.tel{ 
+    color: black;
+    text-align:center;
+    font-size: 1.6em;
+    margin-right: 0.3em;
+    margin-bottom: 0.1em;
+    text-shadow: 3px 2px 7px black;
+    
+    
+}
+
+    #locate1{
+        display: flex;         /* Use flexbox layout */
+    
+    align-content: space-between;
+    align-items: flex-start;        /* Align items to the top */
+}
+#locate2{
+    display: flex;         /* Use flexbox layout */
+
+align-content: space-between;
+align-items: flex-start;        /* Align items to the top */
+}
+    .headme{
+        text-shadow: black 2px 2px;
+        text-shadow: black 2px 2px;
+        text-shadow: black 2px 2px;
+        text-shadow: black 2px 2px;
+        text-shadow: black 2px 2px;
+        text-shadow: black 2px 2px;
+    }
+  
+
+  .about-container {
+    justify-content: space-between; /* Distribute items with space in between */
+    background-color: rgb(2, 2, 80);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    color: #f2f2f2;
+    text-shadow: black 2px 2px;
+        text-shadow: black 2px 2px;
+        text-shadow: black 2px 2px;
+    
+  }
+
+  .about-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .about-content {
+    line-height: 1.6;
+  }
+
+  .mission {
+    font-weight: bold;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;}
+
+
+
+

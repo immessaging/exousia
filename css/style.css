@@ -1,0 +1,188 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font styles for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Style the header section */
+#logo{
+    width: 100%;
+    margin: 0px;
+}
+header {
+    background-color: rgb(4, 4, 63);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+   
+    
+    width: 100%;
+    
+    
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+   
+    
+    
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    text-shadow: 5px gold;
+    
+}
+#login{
+    border-style: groove;
+    border-color: goldenrod;
+    border-radius: 30px;
+    box-shadow: black;
+    box-sizing: border-box;
+    padding: 10px;
+    border-width: 5px;
+}
+#admin{
+    border-style: groove;
+    border-color: goldenrod;
+    border-radius: 30px;
+    box-shadow: black;
+    box-sizing: border-box;
+    padding: 10px;
+    border-width: 5px;
+}
+
+#motto {
+    color: white;
+    text-align: center;
+    text-shadow: #333;
+    background-color: rgb(139, 103, 11);
+}
+
+/*slide show*/
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 2%;
+    padding: 20px;
+    border-bottom-style: double;
+    box-sizing: border-box;
+    box-shadow: black;
+  }
+  
+  .mySlides {
+    display: none;
+    width: 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color:goldenrod;
+    font-weight: bold;
+    font-size: 100px;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+/* Style content sections */
+.content {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#app {
+    text-decoration: none;
+    color: white;
+
+}
+#myButton {
+    
+    background-color:rgb(4, 77, 4);
+    border-radius: 5px 7px;
+
+}
+#output {
+    background-color: rgb(153, 133, 17)
+;
+    color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 40%;
+    text-align: center;
+    box-shadow: black 100px;
+    padding: 30px;
+}
+
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* Add some responsiveness for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    .content {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+/* Additional styles can be added based on your design preferences */

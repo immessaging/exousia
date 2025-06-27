@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multistep Form</title>
+    <link rel="stylesheet" href="css/admissionnow.css">
+</head>
+<body>
+    <form id="adForm">
+        <div class="form-step active" id="step-1">
+            <h1>Parent's Details</h1>
+            <label for="parent-name">Parent Name:</label>
+            <input type="text" id="parent-name" placeholder="Parent Name" required>
+            
+            <label for="country-select">Country:</label>
+            <select id="country-select" name="country" required>
+                <option value="">Select Country</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+            </select>
+
+            <label for="state-select">State:</label>
+            <select id="state-select" name="state" disabled required>
+                <option value="">Select State</option>
+            </select>
+
+            <label for="lga-select">LGA:</label>
+            <select id="lga-select" name="lga" disabled required>
+                <option value="">Select LGA</option>
+            </select>
+
+            <div class="form-navigation">
+                <button type="button" class="next-btn">Next</button>
+            </div>
+        </div>
+
+        <div class="form-step" id="step-2">
+            <h1>Prospective Student Details</h1>
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" placeholder="Student Name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="prev-class">Previous Class:</label>
+            <select id="prev-class" required>
+                <option value="">Select Previous Class</option>
+                <option value="Reception">Reception</option>
+                <option value="Pre-School 1">Pre-School 1</option>
+                <option value="Pre-School 1/ Nursery 1">Pre-School 1/ Nursery 1</option>
+          <option value="Pre-School 2/ Nursery 2">Pre-School 2/ Nursery 2</option>
+          <option value="Pre-School 3/ Nursery 3">Pre-School 3/ Nursery 3</option>
+          <option value="Basic 1/ Primary 1">Basic 1/ Primary 1</option>
+          <option value="Basic 2/ Primary 2">Basic 2/ Primary 2</option>
+          <option value="Basic 3/ Primary 3">Basic 3/ Primary 3</option>
+          <option value="Basic 4/ Primary 4">Basic 4/ Primary 4</option>
+          <option value="Basic 5/ Primary 5">Basic 5/ Primary 5</option>
+          <option value="Basic 7/JSS 1">Basic 7/JSS 1</option>
+          <option value="Basic 8/JSS 2">Basic 8/JSS 2</option>
+          <option value="Basic 9/JSS 3">Basic 9/JSS 3</option>
+          <option value="SS 1">SS 1</option>
+          <option value="SS 2"> SS 2</option>
+          <option value="SS 3"> SS 3</option>
+            </select>
+
+            <div class="form-navigation">
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+        </div>
+
+        <div class="form-step" id="step-3">
+            <h1>Important Information</h1>
+            <label for="disability">Disability:</label>
+            <input type="text" id="disability" placeholder="Any disability?">
+
+            <label for="medical">Medical Needs:</label>
+            <input type="text" id="medical" placeholder="Any medical needs?">
+
+            <div class="form-navigation">
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="button" class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </form>
+    <script src="adminnow.js"></script>
+</body>
+</html>

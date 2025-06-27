@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exousia School Facilities</title>
+    <link rel="stylesheet" href="css/facility.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Exousia Entrepreneurial Academy</h1>
+        
+    </header>
+
+    <section class="facilities">
+        <h2>Our School Facilities</h2>
+        <div class="facility-card" onclick="showDetails('facility1')">
+            <img src="images/practical biology.JPG" alt="Facility 1">
+            <h3>Biology Laboratory</h3>
+        </div>
+        <div class="facility-card" onclick="showDetails('facility2')">
+            <img src="images/practical chemistry.JPG" alt="Facility 2">
+            <h3>Chemistry Laboratory</h3>
+        </div>
+        <div class="facility-card" onclick="showDetails('facility3')">
+            <img src="images/practical physics.JPG" alt="Facility 3">
+            <h3>Physics Laboratory</h3>
+        </div>
+        <div class="facility-card" onclick="showDetails('facility4')">
+            <img src="images/computer practical.JPG" alt="Facility 4">
+            <h3>ICT Laboratory</h3>
+        </div>
+        <div class="facility-card" onclick="showDetails('facility5')">
+            <img src="images/school-bus.JPG" alt="Facility 5">
+            <h3>School Bus</h3>
+        </div>
+       
+        <div class="facility-card" onclick="showDetails('facility7')">
+            <img src="images/sport-center.JPG" alt="Facility 7">
+            <h3>Sport Center</h3>
+        </div>
+        
+        <div class="facility-card" onclick="showDetails('facility9')">
+            <img src="images/exhibition 1.jpg" alt="Facility 9">
+            <h3>Project Center</h3>
+        </div>
+        <!-- Add more facility cards as needed -->
+    </section>
+
+    <section id="facility-details" class="hidden">
+        <button id="close-button" onclick="hideDetails()">Close</button>
+        <div id="facility-content"></div>
+    </section>
+
+    
+
+    <script src="facility.js"></script>
+</body>
+<footer>
+    <p>&copy; 2023 Exousia Entrepreneurial Academy. All rights reserved.</p>
+</footer>
+</html>
+
+
+
+
